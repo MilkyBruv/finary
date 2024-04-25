@@ -1,41 +1,70 @@
 {
+
 	"schemaVersion": 1,
 	"id": "finary",
 	"version": "${version}",
 	"name": "Finary",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A Minecraft mod that implements an extensive farming system with a large catalogue of crops and new foods. Also containing winary with the ability to grow vineyards and create alcoholic beverages.",
+
 	"authors": [
-		"Me!"
+
+		"MilkyBruv"
+
 	],
+
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+
+		"homepage": "https://github.com/MilkyBruv",
+		"sources": "https://github.com/MilkyBruv/finary"
+
 	},
+
 	"license": "CC0-1.0",
 	"icon": "assets/finary/icon.png",
 	"environment": "*",
+
 	"entrypoints": {
+
 		"main": [
+
 			"net.milkybruv.finary.Finary"
+
 		],
+
 		"client": [
+
 			"net.milkybruv.finary.FinaryClient"
+
 		]
+
 	},
+
 	"mixins": [
+
 		"finary.mixins.json",
+
 		{
+
 			"config": "finary.client.mixins.json",
 			"environment": "client"
+
 		}
+
 	],
+
 	"depends": {
+
 		"fabricloader": ">=0.15.10",
 		"minecraft": "~1.20.1",
 		"java": ">=17",
 		"fabric-api": "*"
+
 	},
+
 	"suggests": {
+
 		"another-mod": "*"
+
 	}
+	
 }
